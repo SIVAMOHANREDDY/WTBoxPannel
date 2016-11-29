@@ -1,0 +1,24 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chart="using:WTBoxPannel"
+    xmlns:grid="using:WTBoxPannel.Panels"
+    xmlns:local="using:WTBoxPannel.Themes">
+
+    <Style TargetType="chart:WTChart">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <chart:BoxPanel x:Name="ChartPanel" Background="{TemplateBinding Background}" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"/>
+                        <grid:GridPanel x:Name="GridPanel" />
+                        <!--<grid:SeriesPanel x:Name="SeriesPanel" />-->
+                        <!-- Grid Lines panel-->
+                        <!-- Series panel -->
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+
